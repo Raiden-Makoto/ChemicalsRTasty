@@ -46,7 +46,7 @@ The **Tox21 Dataset has $12$ assays.**
 
 ---
 
-** Stress Response (SR) assays (5 endpoints) **
+**Stress Response (SR) assays (5 endpoints)**
 
 8. **SR-ARE** (Antioxidant Response Element)  
    - **Pathway**: Nrf2-ARE oxidative stress response  
