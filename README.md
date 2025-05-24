@@ -3,7 +3,7 @@
 Multi-task binary toxicity prediction: for each molecule the model outputs 12 probabilities, one for each assay (e.g. NR-AR, SR-ARE, p53, etc.). At training time we use a binary cross-entropy loss (with masking for missing labels) over those 12 tasks, and at the end of each epoch we compute the ROC-AUC per task (then average) on the held-out validation set to see how well the model is distinguishing actives vs. inactives across all assays.
 
 ### Tox21 Dataset Description
-**Tox21 Dataset has $12$ assays.
+The **Tox21 Dataset has $12$ assays.**     
 **Nuclear Receptor (NR) assays (7 endpoints)**
 
 1. **NR-AR** (Androgen Receptor)  
