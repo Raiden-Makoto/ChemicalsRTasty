@@ -74,7 +74,27 @@ The **Tox21 Dataset has $12$ assays.**
 
 
 ### Model Summary
-`soon`
+```
+GINEWithJK(
+  (conv1): GINEConv(nn=Sequential(
+    (0): Linear(in_features=7, out_features=384, bias=True)
+    (1): BatchNorm1d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Linear(in_features=384, out_features=384, bias=True)
+  ))
+  (convs): ModuleList(
+    (0-2): 3 x GINEConv(nn=Sequential(
+      (0): Linear(in_features=384, out_features=384, bias=True)
+      (1): BatchNorm1d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=384, out_features=384, bias=True)
+    ))
+  )
+  (jk): JumpingKnowledge(cat)
+  (pool): Set2Set(1536, 3072)
+  (fc): Linear(in_features=3072, out_features=12, bias=True)
+)
+```
 
 ### Results
-very shit
+AUC: $$0.714$$
