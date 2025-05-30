@@ -82,4 +82,4 @@ There are three models:
 ### Results
 `GINE`: $$0.702 \quad\text{AUC}$$       
 `GINEWithJK`: $$0.716 \quad\text{AUC}$$          
-`GINEWithQNN`: $$0.0706 \quad\text{AUC}$$ (ideal simulator)
+`GINEWithQNN`: $$0.706 \quad\text{AUC}$$ (ideal simulator)
