@@ -74,12 +74,10 @@ The **Tox21 Dataset has $12$ assays.**
 
 
 ### Model Summary
-There are three models:
-1. `GINE`: A simple edge-enhanced graph isomorphism network.
-2. `GINEWithJK`: A more advanced edge-enhanced GIN that incorporates Jumping Knowledge to aggregate the embeddings from *all* hidden layers to influence the final prediction.
-3. `GINEWithQNN`: An edge-enhanced GIN with the final readout/prediction ``nn.Linear`` layer replaced with a small quantum neural network.
+There are two models:
+1. `GINEWithJK`: An edge-enhanced GIN that incorporates Jumping Knowledge to aggregate the embeddings from *all* hidden layers to influence the final prediction.
+3. `GINEWithQNN`: An edge-enhanced GIN with the initial mixing ``nn.Linear`` layer replaced with a small quantum neural network.
 
-### Results
-`GINE`: $$0.702 \quad\text{AUC}$$       
-`GINEWithJK`: $$0.716 \quad\text{AUC}$$          
-`GINEWithQNN`: $$0.706 \quad\text{AUC}$$ (ideal simulator)
+### Results   
+`GINEWithJK`: $$0.711 \quad\text{AUC}$$          
+`GINEWithQNN`: $$0.696 \quad\text{AUC}$$ (ideal simulator)
